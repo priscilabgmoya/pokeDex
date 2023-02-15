@@ -1,0 +1,21 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+#Error404 {
+  display: flex;
+  justify-content: center;
+}
+#Error404 img {
+  width: 100%;
+  object-fit: cover;
+}
+#copyrightFooter {
+  text-align: center;
+  color: aliceblue;
+}
