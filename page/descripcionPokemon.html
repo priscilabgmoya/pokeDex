@@ -1,17 +1,248 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="pagina de PokeDex">
-    <meta name="keybords" content="Pokemon, pikachu, ash, pokedex, agregar mas  ">
-    <meta name="author" content="Rusco German André, Garcia Moya Priscila Belen, Ramos Emilia Belen, Romero Uro, Juan Gerardo">
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="pagina de PokeDex" />
+    <meta
+      name="keybords"
+      content="Pokemon, pikachu, ash, pokedex, agregar mas  "
+    />
+    <meta
+      name="author"
+      content="Rusco German André, Garcia Moya Priscila Belen, Ramos Emilia Belen, Romero Uro, Juan Gerardo"
+    />
     <title>PokeDex</title>
-</head>
-<body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-</body>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <header>Soy el Header</header>
+    <main class="container">
+      <!--Carrousel-->
+      <section id="carousel" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/img/carrousel2.png"
+              class="d-block w-100 card-img"
+              alt="imagen banner 1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/img/carrousel1.jpg"
+              class="d-block w-100 card-img"
+              alt="imagen banner 2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/img/carrousel3.jpg"
+              class="d-block w-100 card-img"
+              alt="imagen banner 3"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </section>
+
+      <!--Descripcion del pokemon Charmander-->
+      <h2 class="pokemon-heading">
+        Charmander <span class="text-secondary text-light"> N° 004</span>
+      </h2>
+      <section class="pokemon-grid mb-4">
+        <!-- <img
+          class="card-img img-charmander "
+          src="/img/charmander.png"
+          alt="imagen pokemon"
+        /> -->
+        <div class="hoverable">
+          <img
+            class="card-img img-charmander"
+            src="/img/charmander.png"
+            alt="imagen pokemon"
+          />
+        </div>
+        <article
+          class="pokemon-contenido text-light bg-warning-subtle rounded-3 p-1"
+        >
+          <p>
+            Prefiere las cosas calientes. Dicen que cuando llueve le sale vapor
+            de la punta de la cola.
+          </p>
+
+          <div class="container text-start">
+            <div class="row">
+              <div class="col-6">
+                <p class="d-block mb-0 mt-4 text-uppercase">
+                  Altura <i class="bi bi-rulers"></i>
+                </p>
+                0.6 m
+              </div>
+              <div class="col-6">
+                <p class="d-block mb-0 mt-4 text-uppercase">Categoria</p>
+                Lagartija
+              </div>
+
+              <div class="w-100"></div>
+
+              <div class="col-6">
+                <p class="d-block mb-0 mt-4 text-uppercase">
+                  Peso <i class="bi bi-calendar"></i>
+                </p>
+                8.5 kg
+              </div>
+              <div class="col-6">
+                <p class="d-block mb-0 mt-4 text-uppercase">Habilidad</p>
+                Lanza Llamas
+              </div>
+              <div class="w-100"></div>
+              <div class="col-12">
+                <p class="d-block mb-0 mt-4 text-uppercase">Sexo</p>
+                <i class="bi bi-gender-female"></i>
+                <i class="bi bi-gender-male"></i>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="pokemonSkills-grid text-light">
+        <article class="container">
+          <h4>Puntos de base</h4>
+          <div class="row">
+            <div
+              class="progress col-12 mb-1"
+              role="progressbar"
+              aria-label="Success example"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar bg-success" style="width: 25%">PS</div>
+            </div>
+            <div
+              class="progress col-12 my-1"
+              role="progressbar"
+              aria-label="Info example"
+              aria-valuenow="50"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar bg-info" style="width: 50%">Ataque</div>
+            </div>
+            <div
+              class="progress col-12 my-1"
+              role="progressbar"
+              aria-label="Warning example"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar bg-warning" style="width: 75%">
+                Defensa
+              </div>
+            </div>
+            <div
+              class="progress col-12 my-1"
+              role="progressbar"
+              aria-label="Danger example"
+              aria-valuenow="100"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar bg-danger" style="width: 100%">
+                Velocidad
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="pokemon-contenido rounded-3 bg-primary-subtle">
+          <div class="container text-start">
+            <div class="row">
+              <div class="col-12">
+                <p class="d-block mb-0 mt-2">
+                  Tipo:
+                  <input
+                    class="btn btn-danger sinCursor"
+                    type="button"
+                    value="Fuego"
+                  />
+                </p>
+              </div>
+
+              <div class="w-100"></div>
+
+              <div class="col-12">
+                <p class="d-block mb-0 mt-2">
+                  Debilidad:
+                  <input
+                    class="btn btn-info sinCursor"
+                    type="button"
+                    value="Agua"
+                  />
+                  <input
+                    class="btn btn-secondary sinCursor"
+                    type="button"
+                    value="Roca"
+                  />
+                  <input
+                    class="btn btn-warning sinCursor"
+                    type="button"
+                    value="Tierra"
+                  />
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>Soy el Footer</footer>
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
 </html>
